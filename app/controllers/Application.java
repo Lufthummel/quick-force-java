@@ -105,9 +105,9 @@ public class Application extends Controller {
         public static class Account {
             public String Id;
             public String Name;
-            public String Type;
-            public String Industry;
-            public String Rating;
+            //public String Type;
+            //public String Industry;
+            //public String Rating;
         }
 
         @JsonIgnoreProperties(ignoreUnknown = true)
