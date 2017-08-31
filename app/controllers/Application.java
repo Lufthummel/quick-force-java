@@ -131,7 +131,7 @@ public class Application extends Controller {
         }
 
         public F.Promise<List<Account>> getAccounts(AuthInfo authInfo) {
-            F.Promise<WSResponse> responsePromise = ws.url(authInfo.instanceUrl + "/services/data/v34.0/query/")
+            F.Promise<WSResponse> responsePromise = ws.url(authInfo.instanceUrl + "/services/data/v40.0/query/")
                     .setHeader("Authorization", "Bearer " + authInfo.accessToken)
                     .setQueryParameter("q", "SELECT Id, Name, Type, Industry, Rating FROM Account")
                     .get();
